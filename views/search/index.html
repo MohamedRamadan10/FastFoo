@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FooFast | Search</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="/assets/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="/assets/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="/assets/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="/assets/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="/assets/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="/assets/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="/assets/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="/assets/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="/assets/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="/assets/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/assets/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="/assets/favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<!-- CSS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Open+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="/assets/lib/fontawesome/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="/assets/lib/slick/slick-theme.css" />
+		<link rel="stylesheet" href="/assets/lib/slick/slick.css" />
+		<link rel="stylesheet" href="/assets/lib/animate/animate.min.css" />
+		<link rel="stylesheet" href="/assets/css/styles.min.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="/assets/images/logo.svg" alt="" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto ms-4 mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Offers</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">All Restaurants</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Deliver with FooFast</a>
+						</li>
+					</ul>
+				</div>
+				<div class="account__cart__lang d-flex align-items-center">
+					<div class="account__cart d-flex align-items-center">
+						<div class="account me-2">
+							<a href="">
+								<img src="/assets/images/user.svg" class="svg" alt="" />
+							</a>
+						</div>
+						<div class="cart">
+							<a href="" class="d-inline-bock position-relative">
+								<img src="/assets/images/cart.svg" class="svg" alt="" />
+								<div class="num">2</div>
+							</a>
+						</div>
+					</div>
+					<div class="lang ms-3">
+						<select name="" id="" class="bg-transparent border-0">
+							<option value="">EN</option>
+							<option value="">FR</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="header">
+			<div class="container">
+				<div class="heading text-center wow fadeIn" data-wow-delay="1s">
+					<h1>We Deliver The Taste Of Life</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="main__search wow fadeIn">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-8 mx-auto">
+						<form action="" class="d-flex align-items-center">
+							<input
+								type="text"
+								placeholder="Enter your postcode"
+								class="form-control me-2"
+							/>
+							<button type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="category__items">
+			<div class="container">
+				<div class="category__slider wow fadeIn" data-wow-delay="1s">
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img src="" class="food__pic img-fluid w-100" alt="" />
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img
+									src="/assets/images/food.jpg?w=194&h=140"
+									class="food__pic img-fluid w-100"
+									alt=""
+								/>
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img
+									src="/assets/images/food.jpg?w=194&h=140"
+									class="food__pic img-fluid w-100"
+									alt=""
+								/>
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img src="" class="food__pic img-fluid w-100" alt="" />
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img
+									src="/assets/images/food.jpg?w=194&h=140"
+									class="food__pic img-fluid w-100"
+									alt=""
+								/>
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img
+									src="/assets/images/food.jpg?w=194&h=140"
+									class="food__pic img-fluid w-100"
+									alt=""
+								/>
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img
+									src="/assets/images/food.jpg?w=194&h=140"
+									class="food__pic img-fluid w-100"
+									alt=""
+								/>
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img
+									src="/assets/images/food.jpg?w=194&h=140"
+									class="food__pic img-fluid w-100"
+									alt=""
+								/>
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img
+									src="/assets/images/food.jpg?w=194&h=140"
+									class="food__pic img-fluid w-100"
+									alt=""
+								/>
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="cat__item d-block">
+							<div class="img h-100 position-relative">
+								<img
+									src="/assets/images/food.jpg?w=194&h=140"
+									class="food__pic img-fluid w-100"
+									alt=""
+								/>
+								<span class="title fw-bold">Category Name</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="search__results">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-xl-3 col-md-4 theia wow fadeIn" data-wow-delay="1s">
+						<div class="side__left">
+							<div class="change__location">
+								<div class="filter__item">
+									<div class="title d-flex flex-wrap">
+										<img src="/assets/images/location.svg" class="svg me-1" alt="" />
+										L1 8JQ, Liverpool
+									</div>
+									<a href="" class="btn d-block">Change Location</a>
+								</div>
+							</div>
+
+							<div class="food__filter">
+								<div class="d-flex flex-wrap justify-content-between px-2 mb-2">
+									<div class="title d-flex flex-wrap">
+										<img src="/assets/images/food-category.svg" class="svg me-1" alt="" />
+										Food Categories
+									</div>
+									<a href="" class="text-primary">Reset</a>
+								</div>
+
+								<div class="filter__item">
+									<ul class="list-unstyled clearfix mb-0">
+										<li class="d-flex justify-content-between">
+											<div class="form-check">
+												<input
+													class="form-check-input"
+													type="checkbox"
+													value=""
+													id="food-1"
+												/>
+												<label class="form-check-label" for="food-1">
+													Pizza - Italian
+												</label>
+											</div>
+											<div class="num">20</div>
+										</li>
+										<li class="d-flex justify-content-between">
+											<div class="form-check">
+												<input
+													class="form-check-input"
+													type="checkbox"
+													value=""
+													id="food-2"
+												/>
+												<label class="form-check-label" for="food-2">
+													Pizza - Italian
+												</label>
+											</div>
+											<div class="num">20</div>
+										</li>
+										<li class="d-flex justify-content-between">
+											<div class="form-check">
+												<input
+													class="form-check-input"
+													type="checkbox"
+													value=""
+													id="food-3"
+												/>
+												<label class="form-check-label" for="food-3">
+													Pizza - Italian
+												</label>
+											</div>
+											<div class="num">20</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="lang__filter">
+								<div class="d-flex flex-wrap justify-content-between px-2 mb-2">
+									<div class="title d-flex flex-wrap">
+										<img src="/assets/images/worldwide.svg" class="svg me-1" alt="" />
+										Languages
+									</div>
+									<a href="" class="text-primary">Reset</a>
+								</div>
+
+								<div class="filter__item">
+									<ul class="list-unstyled clearfix mb-0">
+										<li class="d-flex justify-content-between">
+											<div class="form-check">
+												<input
+													class="form-check-input"
+													type="checkbox"
+													value=""
+													id="lang-1"
+												/>
+												<label class="form-check-label" for="lang-1"> English </label>
+											</div>
+										</li>
+										<li class="d-flex justify-content-between">
+											<div class="form-check">
+												<input
+													class="form-check-input"
+													type="checkbox"
+													value=""
+													id="lang-2"
+												/>
+												<label class="form-check-label" for="lang-2"> French </label>
+											</div>
+										</li>
+										<li class="d-flex justify-content-between">
+											<div class="form-check">
+												<input
+													class="form-check-input"
+													type="checkbox"
+													value=""
+													id="lang-3"
+												/>
+												<label class="form-check-label" for="lang-3"> Russian </label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9 col-md-8 theia">
+						<div class="secondary__search wow fadeIn" data-wow-delay="1s">
+							<form action="" class="d-flex align-items-center">
+								<input
+									type="text"
+									placeholder="Search for restaurant or a dish"
+									class="form-control me-2"
+								/>
+								<button type="submit">Search</button>
+							</form>
+						</div>
+
+						<div
+							class="results__sort d-flex align-items-center justify-content-between"
+						>
+							<div class="results fw-bold">65 open restaurants</div>
+							<div class="sort">
+								<select id="" name="">
+									<option value="bestMatch">Best match</option>
+									<option value="reviewRating">Reviews</option>
+									<option value="distance">Distance</option>
+									<option value="deliveryTime">Estimated delivery time</option>
+									<option value="popularity">Most popular</option>
+									<option value="minimumOrderValue">Min. order amount</option>
+									<option value="deliveryFee">Delivery costs</option>
+									<option value="averagePrice">Product price</option>
+									<option value="restaurantName">Alphabetical</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="search__items wow fadeIn" data-wow-delay="1s">
+							<div class="row">
+								<div class="col-12">
+									<a href="#" class="search__item d-block">
+										<div class="row g-0">
+											<div class="col-xl-4 col-lg-5">
+												<div class="img h-100 position-relative">
+													<img
+														src="/assets/images/food.jpg?w=366&h=212"
+														class="food__pic img-fluid w-100 h-100"
+														alt=""
+													/>
+													<span class="status open">Open</span>
+													<span class="logo">
+														<img src="/assets/images/logo.jpg?w=70&h=70" alt="" />
+													</span>
+													<div class="reviews d-flex align-items-center">
+														<div class="rate me-1">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-half-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="num">(250)</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-8 col-lg-7">
+												<div class="content">
+													<div class="title fw-bold">
+														Pizza Hut Restaurants - Liverpool One
+													</div>
+													<div class="categories">
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+													</div>
+													<div class="info">
+														<div class="row">
+															<div class="col-lg deliver">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/delivery.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Delivery fee</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		$20.2
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg min__order">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/money.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Min.Order</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		$4.5
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg time">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/clock.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Delivery Time</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		30-45/min
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-12">
+									<a href="#" class="search__item d-block">
+										<div class="row g-0">
+											<div class="col-xl-4 col-lg-5">
+												<div class="img h-100 position-relative">
+													<img src="" class="food__pic img-fluid w-100 h-100" alt="" />
+													<span class="status closed">Closed</span>
+													<span class="logo">
+														<img src="/assets/images/logo.jpg?w=70&h=70" alt="" />
+													</span>
+													<div class="reviews d-flex align-items-center">
+														<div class="rate me-1">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-half-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="num">(250)</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-8 col-lg-7">
+												<div class="content">
+													<div class="title fw-bold">
+														Pizza Hut Restaurants - Liverpool One
+													</div>
+													<div class="categories">
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+													</div>
+													<div class="info">
+														<div class="row">
+															<div class="col-lg deliver">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/delivery.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Delivery fee</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		$20.2
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg min__order">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/money.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Min.Order</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		$4.5
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg time">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/clock.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Delivery Time</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		30-45/min
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-12">
+									<a href="#" class="search__item d-block">
+										<div class="row g-0">
+											<div class="col-xl-4 col-lg-5">
+												<div class="img h-100 position-relative">
+													<img
+														src="/assets/images/food.jpg"
+														class="food__pic img-fluid w-100 h-100"
+														alt=""
+													/>
+													<span class="status open">Open</span>
+													<span class="logo">
+														<img src="" alt="" />
+													</span>
+													<div class="reviews d-flex align-items-center">
+														<div class="rate me-1">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-half-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="num">(250)</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-8 col-lg-7">
+												<div class="content">
+													<div class="title fw-bold">
+														Pizza Hut Restaurants - Liverpool One
+													</div>
+													<div class="categories">
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+													</div>
+													<div class="info">
+														<div class="row">
+															<div class="col-lg deliver">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/delivery.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Delivery fee</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		$20.2
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg min__order">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/money.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Min.Order</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		$4.5
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg time">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/clock.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Delivery Time</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		30-45/min
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-12">
+									<a href="#" class="search__item d-block">
+										<div class="row g-0">
+											<div class="col-xl-4 col-lg-5">
+												<div class="img h-100 position-relative">
+													<img src="" class="food__pic img-fluid w-100 h-100" alt="" />
+													<span class="status open">Open</span>
+													<span class="logo">
+														<img src="" alt="" />
+													</span>
+													<div class="reviews d-flex align-items-center">
+														<div class="rate me-1">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-half-o"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<div class="num">(250)</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-8 col-lg-7">
+												<div class="content">
+													<div class="title fw-bold">
+														Pizza Hut Restaurants - Liverpool One
+													</div>
+													<div class="categories">
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+														<span>Category Name</span>
+													</div>
+													<div class="info">
+														<div class="row">
+															<div class="col-lg deliver">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/delivery.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Delivery fee</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		$20.2
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg min__order">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/money.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Min.Order</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		$4.5
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg time">
+																<div class="d-flex flex-column align-items-center">
+																	<div class="data d-flex">
+																		<div class="icon me-1">
+																			<img src="/assets/images/clock.svg" alt="" />
+																		</div>
+																		<span class="d-block name">Delivery Time</span>
+																	</div>
+																	<div class="d-block text-center text-primary fw-bold price">
+																		30-45/min
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<nav aria-label="Page navigation example wow fadeIn" data-wow-delay="1s">
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<i class="fa fa-angle-left"></i>
+									</a>
+								</li>
+								<li class="page-item active">
+									<a class="page-link" href="#">1</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/assets/lib/jquery/jquery.min.js"></script>
+		<script src="/assets/lib/slick/slick.min.js"></script>
+		<script src="/assets/lib/sticky-sidebar/resizesensor.min.js"></script>
+		<script src="/assets/lib/sticky-sidebar/sticky-sidebar.min.js"></script>
+		<script src="/assets/lib/wow/WOW.min.js"></script>
+		<script src="/assets/js/scripts.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+</html>

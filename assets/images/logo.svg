@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145" height="35.001" viewBox="0 0 145 35.001">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f96"/>
+      <stop offset="0.527" stop-color="#ff7a64"/>
+      <stop offset="1" stop-color="#ff5e62"/>
+    </linearGradient>
+  </defs>
+  <g id="logo" transform="translate(-518 53)">
+    <g id="logo_sticky" transform="translate(518 -52.55)">
+      <path id="Path_2" data-name="Path 2" d="M53.783,14.965c-8.221-13.955-23.886-13.929-32.12,0C24.4,7.7,30.725,2.983,37.723,2.983S51.06,7.706,53.783,14.965ZM37.815,28.08a8.2,8.2,0,0,1-6.5-3.209H35.2a5.63,5.63,0,0,0,5.275,0H44.3a8.156,8.156,0,0,1-6.485,3.209Zm0,6.471H19.94a1.268,1.268,0,0,1-1.276-1.275h0A1.274,1.274,0,0,1,19.94,32h9.325a14.938,14.938,0,0,1-2.591-2.145H13.732a1.269,1.269,0,0,1-1.276-1.275h0a1.276,1.276,0,0,1,1.276-1.273H24.649a14.8,14.8,0,0,1-1.25-2.436H8.234a1.274,1.274,0,1,1,0-2.548H53.02a15.574,15.574,0,0,1-15.2,12.225ZM27.371,19.7H53.664c2.065,0,2.3-1.17,2.025-2.71C54.229,8.7,48.311,2.43,39.63,1.26a1.827,1.827,0,0,0-3.644-.04,21.173,21.173,0,0,0-5.248,1.355c-6.366,2.907-10,7.6-11.561,14.573H1.276a1.277,1.277,0,0,0,0,2.553h26.1Z" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="FooFast" transform="translate(580 -26)" fill="#fff" font-size="22" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="0" y="0">FooFast</tspan></text>
+  </g>
+</svg>
