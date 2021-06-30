@@ -79,6 +79,6 @@ $(() => {
 
 	// Broken Image
 	$("img").on("error", function () {
-		$(this).attr("src", "/assets/images/placeholder.jpg");
+		$(this).attr("src", "../../assets/images/placeholder.jpg");
 	});
 });
