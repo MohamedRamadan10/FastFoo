@@ -1,8 +1,8 @@
 // Required
-@import '../lib/bootstrap/scss/functions';
-@import '../lib/bootstrap/scss/variables';
+@import "../lib/bootstrap/scss/functions";
+@import "../lib/bootstrap/scss/variables";
 // Default variable overrides
-$other-font: 'Playfair Display';
+$other-font: "Playfair Display";
 $box-shadow: 0 4px 15px rgba($black, 0.2);
 $primary: #ff6763;
 $secondary: #444;
@@ -42,11 +42,11 @@ $form-check-min-height: 22px;
 	-webkit-box-orient: vertical;
 }
 // Required
-@import '../lib/bootstrap/scss/bootstrap';
+@import "../lib/bootstrap/scss/bootstrap";
 
 /***************************************************/
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	color: $secondary;
 	&.modal-open {
 		padding-right: 0 !important;
@@ -113,7 +113,7 @@ a {
 .navbar {
 	@include transition(0.3s all ease-in-out);
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -178,7 +178,7 @@ a {
 				color: #fff;
 			}
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				left: -10px;
 				top: 0;
@@ -240,7 +240,7 @@ a {
 			font-size: 45px;
 			margin-bottom: 0;
 			color: #fff;
-			font-family: 'Cardo', serif;
+			font-family: "Cardo", serif;
 		}
 	}
 }
@@ -252,7 +252,7 @@ a {
 	.form-control {
 		box-shadow: 0 3px 15px rgba(#000, $alpha: 0.1);
 	}
-	button[type='submit'] {
+	button[type="submit"] {
 		padding: 15px 30px;
 		color: #fff;
 		@extend %primaryGradient;
@@ -271,7 +271,7 @@ a {
 		background: transparent;
 		border: none;
 	}
-	button[type='submit'] {
+	button[type="submit"] {
 		padding: 15px 30px;
 		color: #fff;
 		@extend %primaryGradient;
@@ -323,12 +323,12 @@ a {
 		}
 		&.slick-prev {
 			&::before {
-				content: '\f104';
+				content: "\f104";
 			}
 		}
 		&.slick-next {
 			&::before {
-				content: '\f105';
+				content: "\f105";
 			}
 		}
 		&:hover {
@@ -354,7 +354,7 @@ a {
 			@include transition(0.3s all ease-in-out);
 		}
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -383,7 +383,7 @@ a {
 }
 
 .search__items {
-	.col-lg-12.col-md-6 {
+	.col-12 {
 		margin-bottom: 30px;
 		&:last-child {
 			margin-bottom: 0;
@@ -404,7 +404,7 @@ a {
 			@include transition(0.3s all ease-in-out);
 		}
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -502,11 +502,7 @@ a {
 		}
 	}
 	&:hover {
-		.img {
-			.food__pic {
-				transform: scale(1.1) rotate(3deg);
-			}
-		}
+		box-shadow: 0 3px 20px rgba(#000, $alpha: 0.2);
 		.content {
 			.title {
 				color: $primary;
