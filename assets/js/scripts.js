@@ -62,8 +62,14 @@ $(() => {
 					settings: { slidesToShow: 4, slidesToScroll: 1, centerMode: false },
 				},
 				{
-					breakpoint: 480,
-					settings: {},
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						arrows: false,
+						centerMode: false,
+						autoplay: false,
+					},
 				},
 			],
 		});
