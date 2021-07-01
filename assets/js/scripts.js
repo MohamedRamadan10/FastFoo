@@ -102,4 +102,13 @@ $(() => {
 	$("img").on("error", function () {
 		$(this).attr("src", "../../assets/images/placeholder.jpg");
 	});
+
+	// Side filter sm
+	const sideFilter = $(".side__left");
+	const btnFilter = $(".filter__sm button");
+	if ($(window).width() < 768) {
+		btnFilter.on("click", () => {
+			sideFilter.addClass("active");
+		});
+	}
 });

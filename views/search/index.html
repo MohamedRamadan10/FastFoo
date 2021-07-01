@@ -101,8 +101,22 @@
 		<nav class="navbar navbar-expand-lg fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					<img src="../../assets/images/logo.svg" alt="" />
+					<img
+						src="../../assets/images/logo.svg"
+						class="d-md-inline-block d-none"
+						alt=""
+					/>
+					<img
+						src="../../assets/images/logo-sm.svg"
+						class="d-md-none d-inline-block"
+						alt=""
+					/>
 				</a>
+				<div class="filter__sm d-md-none d-inline-block me-5">
+					<button class="bg-transparent text-white p-0 border-0">
+						<i class="fa fa-filter"></i>
+					</button>
+				</div>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -117,7 +131,7 @@
 					<span> </span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto ms-4 mb-2 mb-lg-0">
+					<ul class="navbar-nav me-auto ms-lg-4 ms-2 mt-lg-0 mt-3 mb-2 mb-lg-0">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#">Home</a>
 						</li>
