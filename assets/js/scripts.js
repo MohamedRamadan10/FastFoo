@@ -29,15 +29,30 @@ $(() => {
 	// Change Navbar  on scroll
 	const navbar = $(".navbar");
 	const logo = $(".navbar .navbar-brand img");
-	$(window).scroll(function () {
-		if ($(document).scrollTop() > 50) {
-			navbar.addClass("on-scroll");
-			logo.attr("src", "../../assets/images/logo-color.svg");
-		} else {
-			navbar.removeClass("on-scroll");
-			logo.attr("src", "../../assets/images/logo.svg");
-		}
-	});
+
+	if ($(window).width() > 768) {
+		$(window).scroll(function () {
+			$(window).scroll(function () {
+				if ($(document).scrollTop() > 50) {
+					navbar.addClass("on-scroll");
+					logo.attr("src", "../../assets/images/logo-color.svg");
+				} else {
+					navbar.removeClass("on-scroll");
+					logo.attr("src", "../../assets/images/logo.svg");
+				}
+			});
+		});
+	} else if ($(window).width() < 768) {
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > 50) {
+				navbar.addClass("on-scroll");
+				logo.attr("src", "../../assets/images/logo-color.svg");
+			} else {
+				navbar.removeClass("on-scroll");
+				logo.attr("src", "../../assets/images/logo-sm.svg");
+			}
+		});
+	}
 
 	// Category Slide
 	const catSlider = $(".category__slider");

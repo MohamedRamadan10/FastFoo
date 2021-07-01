@@ -113,6 +113,9 @@ a {
 
 .navbar {
 	@include transition(0.3s all ease-in-out);
+	&.fixed-top {
+		z-index: 98;
+	}
 	&::before {
 		content: "";
 		position: absolute;
@@ -127,6 +130,15 @@ a {
 			rgba($color: #000, $alpha: 0)
 		);
 		z-index: 1;
+		@include media-breakpoint-down(sm) {
+			background: linear-gradient(
+				-45deg,
+				rgba(#ff9966, $alpha: 1),
+				rgba(#ff7a64, $alpha: 1),
+				rgba(#ff5e62, $alpha: 1)
+			);
+			min-height: 100px;
+		}
 	}
 	& > .container {
 		position: relative;
@@ -188,18 +200,43 @@ a {
 		img {
 			@include transition(0.3s all ease-in-out);
 			@include media-breakpoint-down(sm) {
-				max-width: 114px;
+				max-width: 122px;
+			}
+		}
+	}
+	.navbar-collapse {
+		@include media-breakpoint-down(md) {
+			position: fixed;
+			top: 60px;
+			min-height: 100vh;
+			overflow-y: auto;
+			background: #fff;
+			z-index: 100;
+			left: -100%;
+			width: 100%;
+			@include transition(0.2s all ease-in-out);
+			&.show {
+				left: 0;
 			}
 		}
 	}
 	.navbar-nav {
 		.nav-item {
 			margin-right: 2.5rem;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 20px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 			&:last-child {
 				margin-right: 0;
 			}
 			.nav-link {
 				color: #fff;
+				@include media-breakpoint-down(sm) {
+					color: $secondary;
+				}
 			}
 			&.active,
 			&:hover {
@@ -294,6 +331,10 @@ a {
 	background: url(../images/header-bg.png) no-repeat center center/cover;
 	position: relative;
 	z-index: 2;
+	@include media-breakpoint-down(sm) {
+		min-height: inherit;
+		background: transparent;
+	}
 	.heading {
 		padding: 125px;
 		padding-bottom: 60px;
@@ -302,6 +343,9 @@ a {
 			margin-bottom: 0;
 			color: #fff;
 			font-family: "Cardo", serif;
+			@include media-breakpoint-down(lg) {
+				font-size: 33px;
+			}
 		}
 		@include media-breakpoint-down(sm) {
 			display: none;
@@ -316,8 +360,17 @@ a {
 	margin-top: -34px;
 	position: relative;
 	z-index: 2;
+	@include media-breakpoint-down(sm) {
+		z-index: 99;
+		margin-top: -59px;
+	}
 	.form-control {
 		box-shadow: 0 3px 15px rgba(#000, $alpha: 0.1);
+		@include media-breakpoint-down(sm) {
+			box-shadow: none;
+			background: #fff;
+			border: none;
+		}
 	}
 	button[type="submit"] {
 		padding: 15px 30px;
@@ -335,6 +388,14 @@ a {
 			align-items: center;
 			justify-content: center;
 			padding: 10px 25px;
+		}
+	}
+	form {
+		@include media-breakpoint-down(sm) {
+			background: #fff;
+			border-radius: 50px;
+			padding: 5px;
+			box-shadow: 0 3px 15px rgba(#000, $alpha: 0.1);
 		}
 	}
 }
@@ -375,6 +436,9 @@ a {
 	position: relative;
 	z-index: 1;
 	padding: 100px 0 50px;
+	@include media-breakpoint-down(sm) {
+		padding: 60px 0 20px;
+	}
 	.container {
 		@include media-breakpoint-down(sm) {
 			padding-left: 15px;
@@ -385,13 +449,13 @@ a {
 	.slick-slide {
 		margin: 0 7px;
 		@include media-breakpoint-down(sm) {
-			margin: 0 2px;
+			margin: 0 5px;
 		}
 	}
 	.slick-list {
 		margin: 0 -7px;
 		@include media-breakpoint-down(sm) {
-			margin: 0 -2px;
+			margin: 0 -5px;
 		}
 	}
 	.slick-arrow {
@@ -435,6 +499,7 @@ a {
 
 .cat__item {
 	border-radius: 15px;
+	@include transition(0.3s all ease-in-out);
 	.img {
 		overflow: hidden;
 		border-radius: 10px;
@@ -459,17 +524,14 @@ a {
 		.title {
 			position: absolute;
 			bottom: 10px;
-			left: 10px;
+			left: 0;
+			padding: 0px 10px;
 			z-index: 2;
 			color: #fff;
 		}
 	}
 	&:hover {
-		.img {
-			.food__pic {
-				transform: scale(1.1) rotate(3deg);
-			}
-		}
+		box-shadow: 0 3px 10px rgba(#000, $alpha: 0.2);
 	}
 }
 
