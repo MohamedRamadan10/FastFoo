@@ -30,7 +30,7 @@ $(() => {
 	const navbar = $(".navbar");
 	const logo = $(".navbar .navbar-brand img");
 
-	if ($(window).width() > 768) {
+	if ($(window).width() > 767) {
 		$(window).scroll(function () {
 			$(window).scroll(function () {
 				if ($(document).scrollTop() > 50) {
@@ -42,7 +42,7 @@ $(() => {
 				}
 			});
 		});
-	} else if ($(window).width() < 768) {
+	} else if ($(window).width() < 767) {
 		$(window).scroll(function () {
 			if ($(document).scrollTop() > 50) {
 				navbar.addClass("on-scroll");
@@ -106,9 +106,15 @@ $(() => {
 	// Side filter sm
 	const sideFilter = $(".side__left");
 	const btnFilter = $(".filter__sm button");
-	if ($(window).width() < 768) {
+	const closeFilter = $(".close__filter");
+	if ($(window).width() < 767) {
 		btnFilter.on("click", () => {
 			sideFilter.addClass("active");
+			$("body").css("overflow-y", "hidden");
+		});
+		closeFilter.on("click", () => {
+			sideFilter.removeClass("active");
+			$("body").css("overflow-y", "auto");
 		});
 	}
 });
