@@ -111,15 +111,10 @@ a {
 		border-color: $primary;
 	}
 	@include media-breakpoint-down(md) {
-		padding: 10px 25px;
+		padding: 10px 15px;
 	}
 }
 
-.container {
-	@include media-breakpoint-down(md) {
-		max-width: 94%;
-	}
-}
 
 .navbar {
 	@include transition(0.3s all ease-in-out);
@@ -456,6 +451,16 @@ a {
 		@extend %primaryGradient;
 		border: none;
 		border-radius: 50px;
+		@include media-breakpoint-down(md) {
+			min-width: 46px;
+			min-height: 46px;
+			width: 46px;
+			height: 46px;
+			padding: 0 !important;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
 
@@ -772,6 +777,12 @@ a {
 	margin-bottom: 30px;
 	.results {
 		font-size: 22px;
+		@include media-breakpoint-down(md) {
+			font-size: 18px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		margin-bottom: 15px;
 	}
 	.sort {
 		select {
@@ -946,6 +957,9 @@ a {
 			@extend %primaryGradient;
 			border: none;
 			border-radius: 50px;
+			@include media-breakpoint-down(md) {
+				padding: 10px 15px;
+			}
 		}
 	}
 	.lang {
