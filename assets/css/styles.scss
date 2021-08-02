@@ -115,7 +115,6 @@ a {
 	}
 }
 
-
 .navbar {
 	@include transition(0.3s all ease-in-out);
 	&.fixed-top {
@@ -797,6 +796,50 @@ a {
 				box-shadow: none;
 				border-color: $primary;
 			}
+			@include media-breakpoint-down(md) {
+				padding: 5px;
+				font-size: 14px;
+				min-width: initial;
+			}
+		}
+	}
+}
+
+.change__location {
+	&.location__sm {
+		@include media-breakpoint-down(md) {
+			border-radius: 6px;
+			border: 1px solid $border;
+			background: $light;
+			padding: 18px 12px;
+			margin-bottom: 30px;
+			box-shadow: 0 3px 5px rgba(#000, $alpha: 0.1);
+		}
+		.filter__item {
+			@include media-breakpoint-down(md) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+		.btn {
+			@include media-breakpoint-down(md) {
+				padding: 0;
+				background: $light;
+				color: $primary;
+				font-size: 14px;
+			}
+		}
+		svg {
+			@include media-breakpoint-down(md) {
+				width: 24px;
+				path {
+					stroke: $primary;
+				}
+				circle {
+					fill: $primary;
+				}
+			}
 		}
 	}
 }
@@ -896,6 +939,11 @@ a {
 			margin: 25px -25px -25px;
 		}
 	}
+	svg:not(.location__icon) {
+		path {
+			fill: $primary;
+		}
+	}
 }
 
 .footer {
@@ -928,6 +976,12 @@ a {
 	ul {
 		li:not(:last-child) {
 			margin-bottom: 15px;
+		}
+		li {
+			@include media-breakpoint-down(lg) {
+				float: left;
+				width: 50%;
+			}
 		}
 	}
 	.contact__info {
@@ -968,5 +1022,10 @@ a {
 		background: $light;
 		border: 1px solid $secondary;
 		color: $secondary;
+		@include media-breakpoint-down(md) {
+			padding: 5px;
+			font-size: 14px;
+			min-width: initial;
+		}
 	}
 }
